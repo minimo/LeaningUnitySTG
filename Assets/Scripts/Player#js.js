@@ -2,8 +2,10 @@
 
 var speed = 5;
 
-function Start () {
+GameObject bullet;
 
+function Start () {
+	yield entershot();
 }
 
 function Update () {
@@ -12,4 +14,9 @@ function Update () {
 	
 	var direction = Vector2(x,y).normalized;
 	rigidbody2D.velocity = direction * speed;
+}
+
+function enterShot() {
+	Instantiate(bullet, transform.position, transform.rotation);
+	yield WaitForSeconds (0.05f);
 }

@@ -13,7 +13,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +85,8 @@ MonoBehaviour:
   speed: 5
   shotDelay: .0500000007
   bullet: {fileID: 100002, guid: 5f274775aba059a4c8daf3a84a2572e0, type: 2}
+  canShot: 1
+  explode: {fileID: 100000, guid: 129d09476914b4128a89b59722abe59d, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

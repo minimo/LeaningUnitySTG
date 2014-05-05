@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 
 		while (true) {
 			spaceship.shot(transform);
+			audio.Play ();
 			yield return new WaitForSeconds(spaceship.shotDelay);
 
 //			Instantiate(bullet, transform.position, transform.rotation);

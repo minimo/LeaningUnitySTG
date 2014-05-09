@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
 	// Use this for initialization
 	IEnumerator Start () {
 		spaceship = GetComponent<Spaceship> ();
-		spaceship.move (transform.up * -1);
+		spaceship.move (transform.up * -10);
 
 		if (!spaceship.canShot) {
 			yield break;
